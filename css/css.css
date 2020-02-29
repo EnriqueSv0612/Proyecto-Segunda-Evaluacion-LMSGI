@@ -1,0 +1,442 @@
+/* ELEMENTOS PRINCIPALES */
+@font-face{
+    font-family: 'Coda_Caption';
+    src: url('../fuentes/Coda_Caption/CodaCaption-ExtraBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Odibee_Sans';
+    src: url('../fuentes/Odibee_Sans/OdibeeSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* MEDIA QUARYS PARA TABLET */
+
+@media screen and (min-width: 480px) and (max-width: 1024px){
+    .pagina{
+        background-image: url('../imagenes/tablet.jpg');
+        background-size: 105% 100%;
+    }
+    
+    #indice{
+        width: 100%;
+    }
+
+    #indice > ul{
+        flex-direction: column;
+        padding: 0em;
+    }
+
+    #indice > ul > li{
+        margin-left: 1%;
+    }
+
+}
+
+/* MEDIA QUARYS PARA MÓVILES */
+
+@media screen and (max-width: 480px){
+    .pagina{
+        background-image: url('../imagenes/fondo_movil.jpg');
+        background-size: 120% 100%;
+    }
+
+    #titulo > img{
+        width: 7%;
+    }
+
+    #menu{
+        flex-direction: column;
+        width: 89.5%;
+    }
+
+    #indice > ul{
+        flex-direction: column;
+    }
+
+    #seccion_articulo{
+        flex-direction: column;
+    }
+
+    #seccion_articulo > article{
+        position: relative;
+        left: 5%;
+        width: 85%;
+        margin-top: 2%;
+        margin-bottom: 5%;
+    }
+
+    #seccion_articulo > article > h2{
+        font-size: 200%;
+    }
+
+    #seccion_articulo2{
+        flex-direction: column;
+    }
+
+    #seccion_articulo2 > article{
+        width: 85%;
+        position: relative;
+        left: 7.5%;
+        margin-top: 2%;
+        margin-bottom: 5%;
+    }
+
+    #seccion_articulo2 > article > h2{
+        font-size: 200%;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+
+    #informacion{
+        flex-direction: column;
+    }
+}
+
+h1{
+    font-family: 'Coda_Caption';
+    font-size: 400%;
+    text-align: center;
+    text-shadow: 2px 2px black;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+html{
+    background-color: blue;
+    height: auto;
+    background-image: url('../imagenes/marvel-vs-dc.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+p{
+    font-family: 'Odibee_Sans';
+}
+
+a{
+    color: black;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+/* FORMULARIO */
+
+#enviar{
+    color: #fff;
+    background-color: #da0501;
+    border-color: #da0501;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+}
+
+label{
+    font-family: 'Odibee_Sans';
+}
+
+/* HEADER */
+
+header{
+    background-color: rgba(255, 0, 0, 0.610);
+    color: white;
+}
+
+h1 > img{
+    width: 6%;
+    height: 6%;
+}
+
+header > ul{
+    font-family: 'Odibee_Sans';
+    list-style: none;
+    font-size: 300%;
+    display: flex;
+    background-color: rgba(255, 255, 0, 0.610);
+    color: black;
+}
+
+#menu > li{
+    margin-left: 3%;
+}
+
+#menu > li:hover{
+    background-color: deepskyblue;
+}
+
+#menu > li:hover > ul {
+    display: block;
+}
+
+#menu > li > ul{
+    display: none;
+}
+
+#menu > li > ul > li{
+    display: block;
+}
+
+#menu li ul li a {
+    display:block !important;
+}
+
+#menu > li > ul > li:hover{
+    background-color: blue;
+}
+
+/* FONDO */
+
+#fondoDC{
+    height: 100%;
+    width: 50%;
+    background-repeat: no-repeat;
+    float: left;
+    left: 0%;
+    top: 30%;
+    z-index: 2;
+}
+
+#fondoMarvel{
+    background-repeat: no-repeat;
+    float: right;
+    right: 0%;
+    top: 30%;
+    z-index: 2;
+}
+
+
+/* ARTÍICULO */
+
+article > h2{
+    font-family: 'Coda_Caption';
+    font-size: 300%;
+}
+
+article{
+    text-align: center;
+    width: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 3;
+    border: 2px solid black;
+    border-radius: 2px;
+}
+
+article > p{
+    margin: 10%;
+    font-size: 150%;
+}
+
+#articulo_principal{
+    text-align: center;
+    width: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 3;
+    border: 2px solid black;
+    border-radius: 2px;
+}
+
+#articulo_principal > h2{
+    font-family: 'Coda_Caption';
+    font-size: 300%;
+}
+
+#articulo_principal > p{
+    margin: 10%;
+    font-size: 150%;
+}
+
+#no_home{
+    margin-top: 2%;
+    overflow: scroll;
+    height: 700px;
+}
+
+#no_home > video{
+    margin-top: 2%;
+}
+
+article > h3{
+    font-family: 'Coda_Caption';
+    font-size: 200%;
+}
+
+#lista_pelis{
+    list-style: none;
+    font-family: 'Odibee_Sans';
+    font-size: 150%;
+}
+
+/* INDICE */
+
+div{
+    background-color: rgba(128, 255, 0, 0.610);
+    font-size: 2rem;
+    text-align: center;
+    padding-right: 1%;
+    border-radius: 20%;
+    border: 2px solid green;
+}
+
+div > ul{
+    list-style: none;
+    display: flex;
+}
+
+div > ul > li{
+    margin-left: 3%;
+}
+
+div > ul > li > a{
+    font-family: 'Odibee_Sans';
+}
+
+div > h3{
+    font-family: 'Coda_Caption';
+    text-shadow: 2px 2px black;
+}
+
+div > ul > li:nth-of-type(2n+1) > a{
+    color: blue;
+}
+
+div > ul > li:nth-of-type(2n) > a{
+    color: red;
+}
+
+/* FOTOS AUTORES */
+
+.foto{
+	border: 5px solid white;
+	border-radius: 16px;
+	float: left;
+}
+
+.fAllan{
+	border: 5px solid black;
+	border-radius: 10px;
+	float: left;
+}
+
+.fFrank{
+	border: 5px solid black;
+	border-radius: 10px;
+	float: left;
+}
+
+.fSteve{
+	border: 5px solid black;
+	border-radius: 10px;
+	float: left;
+}
+
+.fChris{
+	border: 5px solid black;
+	border-radius: 10px;
+	float: left;
+}
+
+.fGrant{
+	border: 5px solid black;
+	border-radius: 10px;
+	float: left;
+}
+
+.fStan{
+	border: 5px solid black;
+	border-radius: 10px;
+	float: left;
+}
+
+.fNeil{
+	border: 5px solid black;
+	border-radius: 10px;
+	float: left;
+}
+
+.fJack{
+	border: 5px solid black;
+	border-radius: 10px;
+	float: left;
+}
+
+.fGarth{
+	border: 5px solid black;
+	border-radius: 10px;
+	float: left;
+}
+
+.fWarren{
+	border: 5px solid black;
+	border-radius: 10px;
+	float: left;
+}
+
+.fWalter{
+	border: 5px solid black;
+	border-radius: 10px;
+	float: left;
+}
+
+/* ASIDE */
+
+aside{
+    background-color: rgba(0, 0, 0, 0.610);
+    border: 1px solid #706B64;
+    border-radius: 3px;
+    margin-top: 2%;
+    padding: 1%;
+    color: white;
+    box-shadow: 0px 2px 2px 2px rgba(200, 195, 177, 0.610);
+    padding-right: 0.5%;
+}
+
+aside > img{
+    position: relative;
+    left: 10%;
+}
+
+aside > p{
+    font-family: 'Odibee_Sans';
+    font-size: 150%;
+    text-align: center;
+}
+
+/* FORMULARIO */
+
+#enviar{
+    color: #fff;
+    background-color: #da0501;
+    border-color: #da0501;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+}
+
+label{
+    font-family: 'Odibee_Sans';
+}
+
+/* FOOTER */
+
+footer{
+    border: 6px outset white;
+}
+
+#informacion{
+    background-color: rgba(255, 255, 255, 0.610);
+    font-family: 'Odibee_Sans';
+    font-size: 150%;
+    display: flex;
+    justify-content: space-between;
+}
